@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    
+}
+
+body{
+    background-color: black;
+    header{
+        
+        .navigation{
+            width: 100vw;
+            
+            padding: .2rem;
+            
+            .logo{
+                
+                
+                .img{
+                    width: 60px;
+                    height: 60px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            
+            .nav{
+                position: relative;
+                display: flex;
+                padding: .5rem; 
+                background-color: none;
+                display: flex;
+                align-items: end;
+                justify-content: end;
+                gap: .2rem;
+                
+                width: 100vw;
+                margin-left: -1%;
+                position: absolute;
+                //right: 1%;
+                //top: 1%;
+                border-radius: .5rem;
+
+                .user{
+                        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 5rem;
+                    margin-top: -20%;
+                    height: 25px;
+                    width: 25px;
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .navbar{
+                    
+                    
+                    
+                }
+                
+                
+            }
+            
+        }
+        
+    }
+    
+    main{
+        
+        .highlights-section{
+            height: 80vh;
+            width: 10%w;
+            //background-image: url("");
+            background-size: cover;
+            //background-color: wheat;
+            .hs{
+                
+                .highlight{
+                    overflow: hidden;
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .h-title{
+                        position: absolute;
+                        
+                        background-color: black;
+                        color: white;
+                        padding: 1rem;
+                        border-radius: .5rem;
+                        text-decoration: none;
+                        font-weight: bolder;
+                        font-size: 1.5rem;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 25%;
+                        width: max-content;
+                    }
+                    .h-img{
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .img{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 80vh;
+                            width: 100vw;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                            
+                        }
+                        
+                    }
+                    
+                    
+                }
+                
+            }
+            
+        }
+        
+        .sugestoes-section{
+            margin-top: 2rem;
+            h2{
+                text-align: center;
+                margin-bottom: 2rem;
+                color: white;
+            }
+            .shows{
+                color: white;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                //grid-template-columns: repeat(4, 1fr);
+                //flex-direction: row;
+                .show{
+                    border-radius: .7rem;
+                    //background-color: white;
+                    .show-img{
+                        border-radius: .7rem;
+                        background-color: black;
+                        width: 320px;
+                        height: 200px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .img{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                           
+                            img{
+                                border-radius: .5rem;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            
+                        }
+                    }
+                    .show-name{
+                        text-align: center;
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    footer{
+        
+        
+        
+        
+    }
+    
+    
+    
+}
+
+
+///////////////////////////////
+//////VARS INDEPENDENTES///////
+///////////////////////////////
+
+.linha{
+    background-color: white;
+    height: 5px;
+}
