@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141414;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: #1c1c1c;
+
+        .logo {
+            img {
+                width: 60px;
+            }
+            h1 { 
+                color: white;
+            }
+        }
+
+        .nav {
+            .user {
+                color: white;
+                font-size: 0.9rem;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    padding: 2rem;
+
+    .anime-info {
+        flex: 70%;
+
+        .anime-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            background-color: #222;
+            padding: 1rem;
+            border-radius: 8px;
+
+            .anime-cover img {
+                width: 150px;
+                height: 225px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+            .anime-details {
+                flex: 1;
+                margin-left: 1rem;
+                color: white;
+
+                h1, h3 {
+                    margin-bottom: 0.5rem;
+                }
+
+                p {
+                    margin: 0.3rem 0;
+                }
+
+                .trailer-btn {
+                    background-color: #00aaff;
+                    color: white;
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+
+            .anime-stats {
+                text-align: center;
+
+                .score {
+                    background-color: #333;
+                    padding: 0.5rem 1rem;
+                    color: white;
+                    font-size: 1.2rem;
+
+                    small {
+                        display: block;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .synopsis {
+            margin-top: 1rem;
+            background-color: #222;
+            padding: 1rem;
+            color: white;
+            border-radius: 8px;
+        }
+    }
+
+    .side-content {
+        flex: 30%;
+        margin-left: 2rem;
+        color: white;
+
+        h3 {
+            margin-bottom: 1rem;
+        }
+
+        .release-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        
+            .release-item {
+                background-color: #333;
+                padding: 1rem;
+                border-radius: 8px;
+                width: 450px;  
+                height: 290px; 
+                overflow: hidden; 
+        
+                .release-cover {
+                    width: 100%; 
+                    height: 90%; 
+                    object-fit: cover ; 
+                    border-radius: 5px; 
+                    
+                }
+        
+                p {
+                    margin: 0;
+        
+                    &:nth-child(1) {
+                        background-color: #0044ff;
+                        width: 30px;
+                        height: 30px;
+                        text-align: center;
+                        line-height: 30px;
+                        border-radius: 50%;
+                        color: white;
+                    }
+        
+                    &:nth-child(2) {
+                        font-weight: bold;
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .episodes-list {
+        margin-top: 2rem; // Para adicionar espaço entre a sinopse e a lista de episódios
+        h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                background-color: #333;
+                color: white;
+                padding: 1rem;
+                margin-bottom: 0.5rem;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+}
